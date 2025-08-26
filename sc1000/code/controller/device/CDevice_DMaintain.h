@@ -36,6 +36,8 @@ struct DMaintain {
     static void Maintain_WashFill();
     //! 加注清洗液
     static void Maintain_WashIntensive();
+    //! 一键清洗
+    static void Maintain_WashOneClick();
 };
 }  // namespace CONTROLLER::CDevice
 #endif  // MAINTAIN_H_1718171213

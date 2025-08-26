@@ -29,6 +29,7 @@ IniSC1000::IniSC1000() {
         smap[maintain_washDrain];
         smap[maintain_washFill];
         smap[maintain_washIntensive];
+        smap[maintain_washoneclick];
 
         smap[qrcode_vid] = 0x18d1;
 

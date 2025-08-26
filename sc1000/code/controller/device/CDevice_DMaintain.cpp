@@ -67,4 +67,12 @@ void DMaintain::Maintain_WashIntensive() {
     task({});
 }
 
+void DMaintain::Maintain_WashOneClick()
+{
+    CONTROLLER::CDevice::DMaintain::Homing_allDevice();
+    CONTROLLER::CDevice::DMaintain::Maintain_WashDrain();
+    CONTROLLER::CDevice::DMaintain::Maintain_AbleASubstrate();
+    CONTROLLER::CDevice::DMaintain::Maintain_AbleBSubstrate();
+    CONTROLLER::CDevice::DMaintain::Maintain_WashIntensive();
+}
 }  // namespace CONTROLLER::CDevice

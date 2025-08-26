@@ -20,6 +20,7 @@ const QString maintain_ableMagneticSeparationWash =
 const QString maintain_washDrain     = GMainTain + QString("/maintain_washDrain");
 const QString maintain_washFill      = GMainTain + QString("/maintain_washFill");
 const QString maintain_washIntensive = GMainTain + QString("/maintain_washIntensive");
+const QString maintain_washoneclick  = GMainTain + QString("/maintain_washoneclick");
 
 const QString GQrcode    = "GQrcode";
 const QString qrcode_vid = GQrcode + QString("/qrcode_vid");

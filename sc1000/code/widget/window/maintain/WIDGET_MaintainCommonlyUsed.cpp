@@ -99,6 +99,8 @@ CommonlyUsed::CommonlyUsed(QWidget *parent) : QWidget(parent), ui(new Ui::Common
         namespace KI      = CONTROLLER::KI;
         nodeList << Node{"全部件归位", &CONMaintain::Homing_allDevice,
                          KI::maintain_homingAllDevice};
+        nodeList << Node{"一键清洗", &CONMaintain::Maintain_WashOneClick,
+                         KI::maintain_washoneclick};
         nodeList << Node{"泵归位", &CONMaintain::Homing_pump, KI::maintain_homingAllPump};
         nodeList << Node{"清管", &CONMaintain::Maintain_TubleDisCard, KI::maintain_discardTube};
         nodeList << Node{"底物A灌注", &CONMaintain::Maintain_AbleASubstrate,
