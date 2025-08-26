@@ -1,0 +1,6 @@
+#ifndef FIXTURE_HPP_1724298779
+#define FIXTURE_HPP_1724298779
+
+#include "WMainFixture.h"
+
+#endif  // FIXTURE_HPP_1724298779

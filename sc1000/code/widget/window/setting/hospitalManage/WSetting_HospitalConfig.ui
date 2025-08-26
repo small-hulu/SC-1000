@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HospitalConfig</class>
+ <widget class="QWidget" name="HospitalConfig">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1696</width>
+    <height>752</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#HospitalConfig {
+
+width: 1697px;
+height: 755px;
+background: #FFFFFF;
+border-radius: 10px;
+}</string>
+  </property>
+  <widget class="QLineEdit" name="edit_hospitalName">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>25</y>
+     <width>688</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">width: 688px;
+height: 60px;
+background: #FFFFFF;
+border-radius: 10px;
+border: 1px solid rgba(170,189,212,0.6);
+
+padding-left: 10px;
+
+font-family: PingFang SC;
+font-weight: 500;
+font-size: 24px;
+color: #333333;
+line-height: 35px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>请输入医院名</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lab_hospitalName">
+   <property name="geometry">
+    <rect>
+     <x>19</x>
+     <y>42</y>
+     <width>100</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">width: 93px;
+height: 23px;
+font-family: PingFang SC;
+font-weight: 500;
+font-size: 24px;
+color: #666666;
+line-height: 35px;</string>
+   </property>
+   <property name="text">
+    <string>医院名称</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="edit_departmentName">
+   <property name="geometry">
+    <rect>
+     <x>989</x>
+     <y>25</y>
+     <width>688</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">width: 688px;
+height: 60px;
+background: #FFFFFF;
+border-radius: 10px;
+border: 1px solid rgba(170,189,212,0.6);
+
+padding-left: 10px;
+
+font-family: PingFang SC;
+font-weight: 500;
+font-size: 24px;
+color: #333333;
+line-height: 35px;</string>
+   </property>
+   <property name="placeholderText">
+    <string>请输入科室名</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lab_departmentName">
+   <property name="geometry">
+    <rect>
+     <x>877</x>
+     <y>42</y>
+     <width>100</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">width: 93px;
+height: 23px;
+font-family: PingFang SC;
+font-weight: 500;
+font-size: 24px;
+color: #666666;
+line-height: 35px;</string>
+   </property>
+   <property name="text">
+    <string>装机科室</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_line1" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>127</y>
+     <width>6698</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">width: 1698px;
+height: 1px;
+background: #FFFFFF;
+border: 1px solid rgba(170,189,212,0.6);</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_line2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>848</x>
+     <y>0</y>
+     <width>1</width>
+     <height>752</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">width: 1px;
+height: 753px;
+background: #FFFFFF;
+border: 1px solid rgba(170,189,212,0.6);</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_addDepart">
+   <property name="geometry">
+    <rect>
+     <x>671</x>
+     <y>153</y>
+     <width>120</width>
+     <height>62</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">width: 120px;
+height: 62px;
+background: #19BC90;
+border-radius: 31px;
+
+font-family: PingFang SC;
+font-weight: bold;
+font-size: 28px;
+color: #FFFFFF;
+line-height: 35px;</string>
+   </property>
+   <property name="text">
+    <string>新增</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>174</y>
+     <width>6</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">width: 6px;
+height: 24px;
+background: #37ADBA;
+border-radius: 3px;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>39</x>
+     <y>172</y>
+     <width>120</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">width: 110px;
+height: 26px;
+font-family: PingFang SC;
+font-weight: 500;
+font-size: 28px;
+color: #000000;
+line-height: 35px;</string>
+   </property>
+   <property name="text">
+    <string>科室管理</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_3" native="true">
+   <property name="geometry">
+    <rect>
+     <x>879</x>
+     <y>174</y>
+     <width>6</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">width: 6px;
+height: 24px;
+background: #37ADBA;
+border-radius: 3px;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>900</x>
+     <y>172</y>
+     <width>120</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">width: 110px;
+height: 26px;
+font-family: PingFang SC;
+font-weight: 500;
+font-size: 28px;
+color: #000000;
+line-height: 35px;</string>
+   </property>
+   <property name="text">
+    <string>医生管理</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_addDoctor">
+   <property name="geometry">
+    <rect>
+     <x>1529</x>
+     <y>153</y>
+     <width>120</width>
+     <height>62</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">width: 120px;
+height: 62px;
+background: #19BC90;
+border-radius: 31px;
+
+font-family: PingFang SC;
+font-weight: bold;
+font-size: 28px;
+color: #FFFFFF;
+line-height: 35px;</string>
+   </property>
+   <property name="text">
+    <string>新增</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="table_doctor">
+   <property name="geometry">
+    <rect>
+     <x>879</x>
+     <y>235</y>
+     <width>800</width>
+     <height>490</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTableWidget {
+    alternate-background-color: #f2f7fb;
+
+    background: #FFFFFF;
+    border-radius: 10px 10px 0px 0px;
+    border: 1px solid rgba(170, 189, 212, 0.6);
+
+    font-family: PingFang SC;
+    font-weight: 500;
+    font-size: 22px;
+    color: #333333;
+    line-height: 35px;
+}
+
+QHeaderView {
+    font-family: PingFang SC;
+    font-weight: 500;
+    font-size: 30px;
+    color: #333333;
+    line-height: 70px;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+QHeaderView::section {
+    border: none;
+}</string>
+   </property>
+   <row>
+    <property name="text">
+     <string>新建行</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>新建行</string>
+    </property>
+   </row>
+   <column>
+    <property name="text">
+     <string>新建列</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>新建列</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QTableWidget" name="table_depart">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>235</y>
+     <width>800</width>
+     <height>490</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTableWidget {
+    alternate-background-color: #f2f7fb;
+
+    background: #FFFFFF;
+    border-radius: 10px 10px 0px 0px;
+    border: 1px solid rgba(170, 189, 212, 0.6);
+
+    font-family: PingFang SC;
+    font-weight: 500;
+    font-size: 22px;
+    color: #333333;
+    line-height: 35px;
+}
+
+QHeaderView {
+    font-family: PingFang SC;
+    font-weight: 500;
+    font-size: 30px;
+    color: #333333;
+    line-height: 70px;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+QHeaderView::section {
+    border: none;
+}</string>
+   </property>
+   <row>
+    <property name="text">
+     <string>新建行</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>新建行</string>
+    </property>
+   </row>
+   <column>
+    <property name="text">
+     <string>新建列</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>新建列</string>
+    </property>
+   </column>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

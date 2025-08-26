@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UserShow</class>
+ <widget class="QWidget" name="UserShow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1696</width>
+    <height>752</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#UserShow {
+background: #FFFFFF;
+border-radius: 10px;
+}</string>
+  </property>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1696</width>
+     <height>651</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTableWidget {
+    alternate-background-color: #f2f7fb;
+
+    background: #FFFFFF;
+    border-radius: 10px 10px 0px 0px;
+    border: 1px solid rgba(170, 189, 212, 0.6);
+
+    font-family: PingFang SC;
+    font-weight: 500;
+    font-size: 22px;
+    color: #333333;
+    line-height: 35px;
+}
+
+QHeaderView {
+    font-family: PingFang SC;
+    font-weight: 500;
+    font-size: 30px;
+    color: #333333;
+    line-height: 70px;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+QHeaderView::section {
+    border: none;
+}</string>
+   </property>
+   <row>
+    <property name="text">
+     <string>新建行</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>新建行</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>新建行</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>新建行</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>新建行</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>新建行</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>新建行</string>
+    </property>
+   </row>
+   <column>
+    <property name="text">
+     <string>账户</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>账户类型</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>描述</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>新建列</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>创建时间</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>删除</string>
+    </property>
+   </column>
+   <item row="0" column="0">
+    <property name="text">
+     <string>1</string>
+    </property>
+   </item>
+   <item row="0" column="1">
+    <property name="text">
+     <string>2</string>
+    </property>
+   </item>
+   <item row="0" column="2">
+    <property name="text">
+     <string>3</string>
+    </property>
+   </item>
+   <item row="0" column="3">
+    <property name="text">
+     <string>4</string>
+    </property>
+   </item>
+   <item row="4" column="0">
+    <property name="text">
+     <string>5</string>
+    </property>
+   </item>
+   <item row="4" column="1">
+    <property name="text">
+     <string>6</string>
+    </property>
+   </item>
+   <item row="4" column="2">
+    <property name="text">
+     <string>7</string>
+    </property>
+   </item>
+   <item row="4" column="3">
+    <property name="text">
+     <string>8</string>
+    </property>
+   </item>
+   <item row="5" column="0">
+    <property name="text">
+     <string>9</string>
+    </property>
+   </item>
+   <item row="5" column="1">
+    <property name="text">
+     <string>10</string>
+    </property>
+   </item>
+   <item row="5" column="2">
+    <property name="text">
+     <string>11</string>
+    </property>
+   </item>
+   <item row="5" column="3">
+    <property name="text">
+     <string>12</string>
+    </property>
+   </item>
+   <item row="6" column="0">
+    <property name="text">
+     <string>13</string>
+    </property>
+   </item>
+   <item row="6" column="1">
+    <property name="text">
+     <string>14</string>
+    </property>
+   </item>
+   <item row="6" column="2">
+    <property name="text">
+     <string>15</string>
+    </property>
+   </item>
+   <item row="6" column="3">
+    <property name="text">
+     <string>16</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QWidget" name="widget_switch" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>650</y>
+     <width>1696</width>
+     <height>104</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

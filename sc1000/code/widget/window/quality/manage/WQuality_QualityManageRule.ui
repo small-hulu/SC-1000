@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QualityManageRule</class>
+ <widget class="QWidget" name="QualityManageRule">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1714</width>
+    <height>755</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="1,3">
+   <item>
+    <widget class="QWidget" name="widget_3" native="true">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>1696</width>
+       <height>80</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>1696</width>
+       <height>80</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">width: 1696px;
+height: 80px;
+background: #37ADBA;
+border-radius: 10px 10px 0px 0px;</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>419</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="styleSheet">
+         <string notr="true">width: 193px;
+height: 27px;
+font-family: PingFang SC;
+font-weight: bold;
+font-size: 28px;
+color: #FFFFFF;
+line-height: 42px;</string>
+        </property>
+        <property name="text">
+         <string>设置质控品规则</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>418</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,0">
+     <item>
+      <widget class="QWidget" name="widget" native="true">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>417</width>
+         <height>631</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>417</width>
+         <height>631</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: #FFFFFF;
+border-radius: 10px;</string>
+       </property>
+       <widget class="QTableWidget" name="tableWidget">
+        <property name="geometry">
+         <rect>
+          <x>8</x>
+          <y>9</y>
+          <width>399</width>
+          <height>615</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>399</width>
+          <height>615</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>399</width>
+          <height>615</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QTableWidget#tableWidget
+{
+background: #FFFFFF;
+font-family: PingFang SC;
+font-weight: 500;
+font-size: 24px;
+border-radius: 10px;
+color: #333333;
+line-height: 42px;
+}
+QTableWidget::item {
+    text-align: center;
+}
+QHeaderView {
+    font-family: PingFang SC;
+	font-weight: bold;
+	font-size: 24px;
+	color: #FFFFFF;
+	line-height: 34px;
+}
+
+QHeaderView::section {
+  background: #37ADBA;
+	border-radius: 10px;
+	border: 1px solid rgba(170,189,212,0.6);
+}
+QTableWidget::item:selected {
+    background: #D4F2F5;
+	border-top: none;
+	border-left: none;
+	border-bottom: 1px solid #22A4B3;
+	border-right: none;
+}</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="widget_2" native="true">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(240, 244, 255);</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="1">
+           <widget class="QCheckBox" name="checkBox_2">
+            <property name="styleSheet">
+             <string notr="true">width: 480px;
+height: 23px;
+font-family: PingFang SC;
+font-weight: bold;
+font-size: 18px;
+color: #000000;
+line-height: 42px;</string>
+            </property>
+            <property name="text">
+             <string>R-4s: 在同一批高和低值之间的差值超过4s</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QCheckBox" name="checkBox_4">
+            <property name="styleSheet">
+             <string notr="true">width: 480px;
+height: 23px;
+font-family: PingFang SC;
+font-weight: bold;
+font-size: 18px;
+color: #000000;
+line-height: 42px;</string>
+            </property>
+            <property name="text">
+             <string>1-3s: 1个质控点超出±3SD</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QCheckBox" name="checkBox_6">
+            <property name="styleSheet">
+             <string notr="true">width: 480px;
+height: 23px;
+font-family: PingFang SC;
+font-weight: bold;
+font-size: 18px;
+color: #000000;
+line-height: 42px;</string>
+            </property>
+            <property name="text">
+             <string>2-2s: 2个质控点超出±2SD</string>
+            </property>
+            <property name="checkable">
+             <bool>false</bool>
+            </property>
+            <property name="checked">
+             <bool>false</bool>
+            </property>
+            <property name="autoRepeat">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QCheckBox" name="checkBox_3">
+            <property name="styleSheet">
+             <string notr="true">width: 480px;
+height: 23px;
+font-family: PingFang SC;
+font-weight: bold;
+font-size: 18px;
+color: #000000;
+line-height: 42px;</string>
+            </property>
+            <property name="text">
+             <string>4-1s: 4个连续的质控测定值同时超过X-1s或X+1s</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QCheckBox" name="checkBox_5">
+            <property name="styleSheet">
+             <string notr="true">width: 480px;
+height: 23px;
+font-family: PingFang SC;
+font-weight: bold;
+font-size: 18px;
+color: #000000;
+line-height: 42px;</string>
+            </property>
+            <property name="text">
+             <string>10-X: 10个连续的质控测定值落在平均数（X）的同一侧</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QCheckBox" name="checkBox">
+            <property name="styleSheet">
+             <string notr="true">width: 480px;
+height: 23px;
+font-family: PingFang SC;
+font-weight: bold;
+font-size: 18px;
+color: #000000;
+line-height: 42px;</string>
+            </property>
+            <property name="text">
+             <string>1-2s: 1个质控点超出±2SD</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <spacer name="horizontalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">width: 155px;
+height: 25px;
+font-family: PingFang SC;
+font-weight: bold;
+font-size: 26px;
+color: #333333;
+line-height: 42px;</string>
+            </property>
+            <property name="text">
+             <string>联合质控判断</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="1" column="2">
+           <widget class="QLineEdit" name="lineEdit">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">width: 531px;
+height: 58px;
+background: #F2F7FB;
+border-radius: 29px;
+border: 1px solid rgba(170,189,212,0.6);</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QLabel" name="label_4">
+            <property name="styleSheet">
+             <string notr="true">width: 119px;
+height: 23px;
+font-family: PingFang SC;
+font-weight: bold;
+font-size: 24px;
+color: #37ADBA;
+line-height: 42px;</string>
+            </property>
+            <property name="text">
+             <string>                靶值</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="3">
+           <widget class="QLineEdit" name="lineEdit_4">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">width: 531px;
+height: 58px;
+background: #F2F7FB;
+border-radius: 29px;
+border: 1px solid rgba(170,189,212,0.6);</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QLabel" name="label_5">
+            <property name="styleSheet">
+             <string notr="true">width: 119px;
+height: 23px;
+font-family: PingFang SC;
+font-weight: bold;
+font-size: 24px;
+color: #37ADBA;
+line-height: 42px;</string>
+            </property>
+            <property name="text">
+             <string>                  标准差</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QLineEdit" name="lineEdit_3">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">width: 531px;
+height: 58px;
+background: #F2F7FB;
+border-radius: 29px;
+border: 1px solid rgba(170,189,212,0.6);</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLabel" name="label_3">
+            <property name="styleSheet">
+             <string notr="true">width: 119px;
+height: 23px;
+font-family: PingFang SC;
+font-weight: bold;
+font-size: 24px;
+color: #37ADBA;
+line-height: 42px;</string>
+            </property>
+            <property name="text">
+             <string>质控品</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QLineEdit" name="lineEdit_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">width: 531px;
+height: 58px;
+background: #F2F7FB;
+border-radius: 29px;
+border: 1px solid rgba(170,189,212,0.6);</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLabel" name="label_6">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">width: 18px;
+height: 20px;
+font-family: PingFang SC;
+font-weight: 500;
+font-size: 28px;
+color: #333333;
+line-height: 42px;</string>
+            </property>
+            <property name="text">
+             <string>x</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLabel" name="label_7">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">width: 19px;
+height: 20px;
+font-family: PingFang SC;
+font-weight: 500;
+font-size: 28px;
+color: #333333;
+line-height: 42px;</string>
+            </property>
+            <property name="text">
+             <string>y</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

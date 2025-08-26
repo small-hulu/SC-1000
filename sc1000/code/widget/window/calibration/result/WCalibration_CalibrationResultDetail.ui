@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CalibrationResultDetail</class>
+ <widget class="QWidget" name="CalibrationResultDetail">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>870</width>
+    <height>509</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="1,1,4">
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="styleSheet">
+      <string notr="true">QWidget#widget
+{
+	background: #37ACBC;
+	border-radius: 10px 10px 0px 0px;
+}</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>372</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="lab_title">
+        <property name="styleSheet">
+         <string notr="true">font-family: PingFang SC;
+font-weight: bold;
+font-size: 28px;
+color: #FFFFFF;
+line-height: 42px;</string>
+        </property>
+        <property name="text">
+         <string>校准结果详情</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>372</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_2" native="true">
+     <property name="styleSheet">
+      <string notr="true">QWidget#widget_2
+{
+background: #FFFFFF;
+border-radius: 10px;
+}</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="lab_name">
+        <property name="styleSheet">
+         <string notr="true">font-family: PingFang SC;
+font-weight: 500;
+font-size: 24px;
+color: #6D7E92;
+line-height: 42px;</string>
+        </property>
+        <property name="text">
+         <string>校准品</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="lab_name_edit">
+        <property name="styleSheet">
+         <string notr="true">font-family: PingFang SC;
+font-weight: bold;
+font-size: 24px;
+color: #333333;
+line-height: 42px;</string>
+        </property>
+        <property name="text">
+         <string>---</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_4">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="lab_coe">
+        <property name="styleSheet">
+         <string notr="true">font-family: PingFang SC;
+font-weight: 500;
+font-size: 24px;
+color: #6D7E92;
+line-height: 42px;</string>
+        </property>
+        <property name="text">
+         <string>系数</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="lab_coe_edit">
+        <property name="styleSheet">
+         <string notr="true">font-family: PingFang SC;
+font-weight: bold;
+font-size: 24px;
+color: #333333;
+line-height: 42px;</string>
+        </property>
+        <property name="text">
+         <string>---</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_5">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="lab_error">
+        <property name="styleSheet">
+         <string notr="true">font-family: PingFang SC;
+font-weight: 500;
+font-size: 24px;
+color: #6D7E92;
+line-height: 42px;</string>
+        </property>
+        <property name="text">
+         <string>校准失败原因</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="lab_error_edit">
+        <property name="styleSheet">
+         <string notr="true">font-family: PingFang SC;
+font-weight: bold;
+font-size: 24px;
+color: #333333;
+line-height: 42px;</string>
+        </property>
+        <property name="text">
+         <string>---</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_6">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>121</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="styleSheet">
+      <string notr="true">QTableWidget#table_Widget
+{
+background: #FFFFFF;
+font-family: PingFang SC;
+font-weight: 500;
+font-size: 24px;
+border-radius: 10px;
+color: #333333;
+line-height: 42px;
+}
+QTableWidget::item {
+    text-align: center;
+}
+QHeaderView {
+    font-family: PingFang SC;
+	font-weight: 500;
+	color: #6D7E92;
+	line-height: 42px;
+	font-size: 26px;
+}
+
+QHeaderView::section {
+    background-color: #EFF0F2;
+	border-top: 1px solid #E1EBF6;
+	border-left: none;
+	border-bottom: 1px solid #E1EBF6;
+	border-right: none;
+	line-height: 42px;
+}
+QTableWidget::item:selected {
+    background: #D4F2F5;
+	border-top: none;
+	border-left: none;
+	border-bottom: 1px solid #22A4B3;
+	border-right: none;
+}</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

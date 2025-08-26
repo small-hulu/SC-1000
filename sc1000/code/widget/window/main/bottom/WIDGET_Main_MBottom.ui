@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MBottom</class>
+ <widget class="QWidget" name="MBottom">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>82</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="widget_time" native="true">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>13</y>
+     <width>135</width>
+     <height>55</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout" stretch="1,1">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QLabel" name="lab_time">
+      <property name="font">
+       <font>
+        <family>PingFang SC</family>
+        <pointsize>-1</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: PingFang SC;
+font-weight: bold;
+font-size: 28px;
+color: #000000;
+line-height: 34px;</string>
+      </property>
+      <property name="text">
+       <string>hh:mm:ss</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="lab_date">
+      <property name="font">
+       <font>
+        <family>PingFang SC</family>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: PingFang SC;
+
+font-size: 24px;
+color: #000000;
+line-height: 34px;</string>
+      </property>
+      <property name="text">
+       <string>yyyy/MM/dd</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="widget_4" native="true">
+   <property name="geometry">
+    <rect>
+     <x>1600</x>
+     <y>13</y>
+     <width>291</width>
+     <height>55</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">width: 291px;
+height: 55px;
+background: #FFFFFF;
+border: 1px solid #CCD7E9;
+border-radius: 27px;</string>
+   </property>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>39</x>
+      <y>15</y>
+      <width>175</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">width: 168px;
+height: 25px;
+font-family: PingFang SC;
+font-weight: 500;
+font-size: 26px;
+color: #000000;
+line-height: 42px;
+
+border: 0px;</string>
+    </property>
+    <property name="text">
+     <string>设备/主机通讯</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget_com_state" native="true">
+    <property name="geometry">
+     <rect>
+      <x>239</x>
+      <y>10</y>
+      <width>36</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/suzhou/bottom_circle_gray.png);
+
+border: 0px;</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget_6" native="true">
+   <property name="geometry">
+    <rect>
+     <x>206</x>
+     <y>13</y>
+     <width>280</width>
+     <height>55</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">width: 291px;
+height: 55px;
+background: #FFFFFF;
+border: 1px solid #CCD7E9;
+
+border-bottom-left-radius : 25px;
+border-top-left-radius : 25px;</string>
+   </property>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>39</x>
+      <y>15</y>
+      <width>175</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">width: 168px;
+height: 25px;
+font-family: PingFang SC;
+font-weight: 500;
+font-size: 26px;
+color: #000000;
+line-height: 42px;
+
+border: 0px;</string>
+    </property>
+    <property name="text">
+     <string>试剂区温度</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lab_reagentBin_temp">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>15</y>
+      <width>91</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">width: 55px;
+height: 23px;
+font-family: PingFang SC;
+font-weight: bold;
+font-size: 26px;
+color: #37ADBA;
+line-height: 42px;
+
+border: 0px;</string>
+    </property>
+    <property name="text">
+     <string>---</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget_7" native="true">
+   <property name="geometry">
+    <rect>
+     <x>486</x>
+     <y>13</y>
+     <width>280</width>
+     <height>55</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">width: 291px;
+height: 55px;
+background: #FFFFFF;
+border: 1px solid #CCD7E9;
+
+border-bottom-right-radius : 25px;
+border-top-right-radius : 25px;</string>
+   </property>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>39</x>
+      <y>15</y>
+      <width>175</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">width: 168px;
+height: 25px;
+font-family: PingFang SC;
+font-weight: 500;
+font-size: 26px;
+color: #000000;
+line-height: 42px;
+
+border: 0px;</string>
+    </property>
+    <property name="text">
+     <string>反应区温度</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lab_reaction_temp">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>15</y>
+      <width>91</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">width: 55px;
+height: 23px;
+font-family: PingFang SC;
+font-weight: bold;
+font-size: 26px;
+color: #37ADBA;
+line-height: 42px;
+
+border: 0px;</string>
+    </property>
+    <property name="text">
+     <string>---</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget_exp_state" native="true">
+   <property name="geometry">
+    <rect>
+     <x>1280</x>
+     <y>13</y>
+     <width>291</width>
+     <height>55</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">width: 291px;
+height: 55px;
+background: transparent;
+border: 2px solid #CCD7E9;
+border-radius: 27px;</string>
+   </property>
+   <widget class="QLabel" name="lab_exp_state">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>15</y>
+      <width>271</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">width: 168px;
+height: 25px;
+font-family: PingFang SC;
+font-weight: 500;
+font-size: 26px;
+color: #000000;
+line-height: 42px;
+
+border: 0px;</string>
+    </property>
+    <property name="text">
+     <string>实验异常，强制终止</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

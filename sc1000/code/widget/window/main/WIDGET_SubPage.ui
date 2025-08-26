@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SubPage</class>
+ <widget class="QWidget" name="SubPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>880</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="widget_main_mid" native="true">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>1696</width>
+     <height>752</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widge_title" native="true">
+   <property name="geometry">
+    <rect>
+     <x>1730</x>
+     <y>20</y>
+     <width>167</width>
+     <height>752</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: rgba(255,255,255,0.9);
+border-radius: 10px;</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_down" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>796</y>
+     <width>1920</width>
+     <height>84</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: #F7F8FA;</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

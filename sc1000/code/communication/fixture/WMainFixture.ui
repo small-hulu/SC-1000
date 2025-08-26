@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainFixture</class>
+ <widget class="QWidget" name="MainFixture">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1696</width>
+    <height>752</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#MainFixture {
+background: #FFFFFF;
+border-radius: 10px;
+
+}
+</string>
+  </property>
+  <widget class="QWidget" name="widget_left" native="true">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>400</width>
+     <height>700</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,8">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QWidget" name="widget_title_left" native="true"/>
+    </item>
+    <item>
+     <widget class="QTreeWidget" name="treeWidget">
+      <property name="styleSheet">
+       <string notr="true">QTreeWidget {
+    background-color: #ffffff; /* 背景颜色 */
+    border: 2px solid #37adba; /* 边框颜色 */
+    selection-background-color: #4CAF50; /* 选中项背景颜色 */
+    selection-color: #ffffff; /* 选中项文字颜色 */
+}
+
+QTreeWidget::item {
+    border-bottom: 1px solid #37adba; /* 项之间的分隔线 */
+    padding: 4px; /* 内边距 */
+	height : 40px;
+}
+
+QTreeWidget::item:selected {
+    background-color: #37adba; /* 选中项背景颜色 */
+    color: #ffffff; /* 选中项文字颜色 */
+}
+
+QTreeWidget::branch {
+    background-color: #ffffff; /* 分支背景颜色 */
+}
+
+QTreeWidget::branch:has-children {
+    border-image: url(:/static/PHOTOS/combo_up.png) 0 ; /* 闭合的分支图标 */
+}
+
+QTreeWidget::branch:open:has-children {
+    border-image: url(:/static/PHOTOS/combo_down.png) 0; /* 展开的分支图标 */
+}
+
+QTreeWidget::branch:has-siblings {
+    border-bottom: 1px solid #37adba; /* 同级分支之间的分隔线 */
+}
+
+QHeaderView::section {
+    background-color: #37adba; /* 表头背景颜色 */
+    border: 1px solid #37adba; /* 表头边框 */
+    padding: 4px; /* 表头内边距 */
+    text-align: left; /* 文字对齐方式 */
+    color: #ffffff; /* 表头文字颜色 */
+}
+
+QHeaderView::section:checked {
+    color: #ffffff; /* 选中列的文字颜色 */
+    background-color: #388E3C; /* 选中列的背景颜色 */
+}
+
+QHeaderView::section:horizontal {
+    border-top: 2px solid #37adba; /* 水平表头的上边框 */
+}
+
+QHeaderView::section:vertical {
+    border-left: 2px solid #37adba; /* 垂直表头的左边框 */
+}</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="widget_mid" native="true">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>20</y>
+     <width>540</width>
+     <height>700</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout" stretch="1,8">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QWidget" name="widget_title_mid" native="true"/>
+    </item>
+    <item>
+     <widget class="QTextEdit" name="textEdit">
+      <property name="styleSheet">
+       <string notr="true">background-color: #effff7;</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="widget_right" native="true">
+   <property name="geometry">
+    <rect>
+     <x>1060</x>
+     <y>20</y>
+     <width>621</width>
+     <height>700</height>
+    </rect>
+   </property>
+   <widget class="QWidget" name="widget_op" native="true">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>140</y>
+      <width>400</width>
+      <height>400</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>400</width>
+      <height>400</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>400</width>
+      <height>400</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

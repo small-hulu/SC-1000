@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MTop</class>
+ <widget class="QWidget" name="MTop">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>118</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background: #F7F8FA;</string>
+  </property>
+  <widget class="QWidget" name="widget_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>182</width>
+     <height>118</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: #F7F8FA;</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_3" native="true">
+   <property name="geometry">
+    <rect>
+     <x>42</x>
+     <y>11</y>
+     <width>99</width>
+     <height>97</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/suzhou/logo-ay.png);</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_app_min">
+   <property name="geometry">
+    <rect>
+     <x>1790</x>
+     <y>13</y>
+     <width>116</width>
+     <height>44</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">width: 116px;
+height: 44px;
+background: #E9EEF3;
+border-radius: 22px;</string>
+   </property>
+   <property name="text">
+    <string>min</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_app_close">
+   <property name="geometry">
+    <rect>
+     <x>1790</x>
+     <y>65</y>
+     <width>116</width>
+     <height>44</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">width: 116px;
+height: 44px;
+background: #E9EEF3;
+border-radius: 22px;</string>
+   </property>
+   <property name="text">
+    <string>close</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_exp_start">
+   <property name="geometry">
+    <rect>
+     <x>1472</x>
+     <y>14</y>
+     <width>150</width>
+     <height>90</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: #19BC90;
+
+border-top-left-radius : 45px;
+border-top-right-radius : 0px;
+border-bottom-left-radius : 45px;
+border-bottom-right-radius : 0px;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_exp_stop">
+   <property name="geometry">
+    <rect>
+     <x>1623</x>
+     <y>14</y>
+     <width>150</width>
+     <height>90</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton:enabled {
+background: #FF6637;
+
+border-top-left-radius : 0px;
+border-top-right-radius : 45px;
+border-bottom-left-radius : 0px;
+border-bottom-right-radius : 45px;
+}
+
+QPushButton:disabled {
+background: gray;
+
+border-top-left-radius : 0px;
+border-top-right-radius : 45px;
+border-bottom-left-radius : 0px;
+border-bottom-right-radius : 45px;
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_exp_start" native="true">
+   <property name="geometry">
+    <rect>
+     <x>1496</x>
+     <y>42</y>
+     <width>29</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: transparent;
+
+image: url(:/suzhou/top_start.png);</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_exp_stop" native="true">
+   <property name="geometry">
+    <rect>
+     <x>1645</x>
+     <y>43</y>
+     <width>28</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: transparent;
+
+image: url(:/suzhou/top_pause.png);</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_exp_start">
+   <property name="geometry">
+    <rect>
+     <x>1537</x>
+     <y>43</y>
+     <width>65</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: transparent;
+
+font-family: PingFang SC;
+font-weight: bold;
+font-size: 32px;
+color: #FEFEFE;
+line-height: 42px;</string>
+   </property>
+   <property name="text">
+    <string>开始</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_exp_stop">
+   <property name="geometry">
+    <rect>
+     <x>1687</x>
+     <y>44</y>
+     <width>65</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: transparent;
+
+font-family: PingFang SC;
+font-weight: bold;
+font-size: 32px;
+color: #FEFEFE;
+line-height: 42px;</string>
+   </property>
+   <property name="text">
+    <string>停止</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_title_sample">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>0</y>
+     <width>142</width>
+     <height>118</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: #37ADBA;
+
+border-radius : 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_title_history">
+   <property name="geometry">
+    <rect>
+     <x>358</x>
+     <y>0</y>
+     <width>142</width>
+     <height>118</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: #37ADBA;
+
+border-radius : 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_title_reagent">
+   <property name="geometry">
+    <rect>
+     <x>516</x>
+     <y>0</y>
+     <width>142</width>
+     <height>118</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: #37ADBA;
+
+border-radius : 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_title_calibration">
+   <property name="geometry">
+    <rect>
+     <x>674</x>
+     <y>0</y>
+     <width>142</width>
+     <height>118</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: #f7f8fa;
+
+border-radius : 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_title_quality">
+   <property name="geometry">
+    <rect>
+     <x>831</x>
+     <y>0</y>
+     <width>142</width>
+     <height>118</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: #37ADBA;
+
+border-radius : 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_title_maintrain">
+   <property name="geometry">
+    <rect>
+     <x>989</x>
+     <y>0</y>
+     <width>142</width>
+     <height>118</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: #37ADBA;
+
+border-radius : 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_title_setting">
+   <property name="geometry">
+    <rect>
+     <x>1147</x>
+     <y>0</y>
+     <width>142</width>
+     <height>118</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: #37ADBA;
+
+border-radius : 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_title_help">
+   <property name="geometry">
+    <rect>
+     <x>1305</x>
+     <y>0</y>
+     <width>142</width>
+     <height>118</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: #37ADBA;
+
+border-radius : 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_title_sample" native="true">
+   <property name="geometry">
+    <rect>
+     <x>239</x>
+     <y>12</y>
+     <width>64</width>
+     <height>64</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/suzhou/bottom_circle_red.png);</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_title_history" native="true">
+   <property name="geometry">
+    <rect>
+     <x>397</x>
+     <y>12</y>
+     <width>64</width>
+     <height>64</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/suzhou/bottom_circle_red.png);</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_title_reagent" native="true">
+   <property name="geometry">
+    <rect>
+     <x>555</x>
+     <y>12</y>
+     <width>64</width>
+     <height>64</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/suzhou/bottom_circle_red.png);</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_title_calibration" native="true">
+   <property name="geometry">
+    <rect>
+     <x>713</x>
+     <y>12</y>
+     <width>64</width>
+     <height>64</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/suzhou/top_off_calibration.png);</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_title_quality" native="true">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>12</y>
+     <width>64</width>
+     <height>64</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: transparent;
+
+image: url(:/suzhou/top_on_quality.png);</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_title_maintrain" native="true">
+   <property name="geometry">
+    <rect>
+     <x>1028</x>
+     <y>12</y>
+     <width>64</width>
+     <height>64</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/suzhou/bottom_circle_red.png);</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_title_setting" native="true">
+   <property name="geometry">
+    <rect>
+     <x>1186</x>
+     <y>12</y>
+     <width>64</width>
+     <height>64</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/suzhou/bottom_circle_red.png);</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_title_help" native="true">
+   <property name="geometry">
+    <rect>
+     <x>1344</x>
+     <y>12</y>
+     <width>64</width>
+     <height>64</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/suzhou/bottom_circle_red.png);</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_title_sample">
+   <property name="geometry">
+    <rect>
+     <x>245</x>
+     <y>81</y>
+     <width>60</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>PingFang SC</family>
+     <pointsize>-1</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: transparent;
+
+width: 51px;
+height: 24px;
+font-family: PingFang SC;
+font-weight: bold;
+font-size: 26px;
+color: #FFFFFF;
+line-height: 42px;</string>
+   </property>
+   <property name="text">
+    <string>测试</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_title_history">
+   <property name="geometry">
+    <rect>
+     <x>404</x>
+     <y>81</y>
+     <width>60</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: transparent;
+
+width: 51px;
+height: 25px;
+font-family: PingFang SC;
+font-weight: 500;
+font-size: 26px;
+color: #000000;
+line-height: 42px;</string>
+   </property>
+   <property name="text">
+    <string>历史</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_title_reagent">
+   <property name="geometry">
+    <rect>
+     <x>562</x>
+     <y>81</y>
+     <width>60</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: transparent;
+
+width: 51px;
+height: 24px;
+font-family: PingFang SC;
+font-weight: bold;
+font-size: 26px;
+color: #FFFFFF;
+line-height: 42px;</string>
+   </property>
+   <property name="text">
+    <string>试剂</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_title_calibration">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>81</y>
+     <width>60</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: transparent;
+
+width: 51px;
+height: 25px;
+font-family: PingFang SC;
+font-weight: 500;
+font-size: 26px;
+color: #000000;
+line-height: 42px;</string>
+   </property>
+   <property name="text">
+    <string>定标</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_title_quality">
+   <property name="geometry">
+    <rect>
+     <x>877</x>
+     <y>81</y>
+     <width>60</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: transparent;
+
+width: 51px;
+height: 24px;
+font-family: PingFang SC;
+font-weight: bold;
+font-size: 26px;
+color: #FFFFFF;
+line-height: 42px;</string>
+   </property>
+   <property name="text">
+    <string>质控</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_title_maintrain">
+   <property name="geometry">
+    <rect>
+     <x>1035</x>
+     <y>81</y>
+     <width>60</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: transparent;
+
+width: 51px;
+height: 24px;
+font-family: PingFang SC;
+font-weight: bold;
+font-size: 26px;
+color: #FFFFFF;
+line-height: 42px;</string>
+   </property>
+   <property name="text">
+    <string>维护</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_title_setting">
+   <property name="geometry">
+    <rect>
+     <x>1193</x>
+     <y>81</y>
+     <width>60</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: transparent;
+
+width: 51px;
+height: 24px;
+font-family: PingFang SC;
+font-weight: bold;
+font-size: 26px;
+color: #FFFFFF;
+line-height: 42px;</string>
+   </property>
+   <property name="text">
+    <string>设置</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_title_help">
+   <property name="geometry">
+    <rect>
+     <x>1352</x>
+     <y>81</y>
+     <width>60</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: transparent;
+
+width: 51px;
+height: 24px;
+font-family: PingFang SC;
+font-weight: bold;
+font-size: 26px;
+color: #FFFFFF;
+line-height: 42px;</string>
+   </property>
+   <property name="text">
+    <string>帮助</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SampleStateItem</class>
+ <widget class="QWidget" name="SampleStateItem">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>180</width>
+    <height>132</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>180</width>
+     <height>132</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">width: 180px;
+height: 132px;
+background: #FFFFFF;
+border-radius: 10px;
+border: 3px solid #FFFFFF;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_image" native="true">
+   <property name="geometry">
+    <rect>
+     <x>77</x>
+     <y>30</y>
+     <width>27</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/suzhou/tube_testing.png);</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lab_position">
+   <property name="geometry">
+    <rect>
+     <x>78</x>
+     <y>100</y>
+     <width>40</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">width: 25px;
+height: 19px;
+font-family: PingFang SC;
+font-weight: 500;
+font-size: 23px;
+color: #333333;
+line-height: 34px;</string>
+   </property>
+   <property name="text">
+    <string>E10</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_state" native="true">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>2</y>
+     <width>50</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/suzhou/tube_expType_Q.png);</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

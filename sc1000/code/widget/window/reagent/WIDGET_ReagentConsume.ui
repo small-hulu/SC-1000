@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ReagentConsume</class>
+ <widget class="QWidget" name="ReagentConsume">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1696</width>
+    <height>752</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#ReagentConsume{
+background: #FFFFFF;
+border-radius: 10px;
+}</string>
+  </property>
+  <widget class="QWidget" name="widget_1" native="true">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>217</width>
+     <height>715</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">width: 217px;
+height: 715px;
+background: #F2F7FB;
+border-radius: 10px;
+border: 1px solid rgba(170,189,212,0.6);</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>20</y>
+     <width>217</width>
+     <height>715</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">width: 217px;
+height: 715px;
+background: #F2F7FB;
+border-radius: 10px;
+border: 1px solid rgba(170,189,212,0.6);</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_3" native="true">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>20</y>
+     <width>217</width>
+     <height>715</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">width: 217px;
+height: 715px;
+background: #F2F7FB;
+border-radius: 10px;
+border: 1px solid rgba(170,189,212,0.6);</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_4" native="true">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>20</y>
+     <width>217</width>
+     <height>715</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">width: 217px;
+height: 715px;
+background: #F2F7FB;
+border-radius: 10px;
+border: 1px solid rgba(170,189,212,0.6);</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_5" native="true">
+   <property name="geometry">
+    <rect>
+     <x>980</x>
+     <y>20</y>
+     <width>217</width>
+     <height>715</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">width: 217px;
+height: 715px;
+background: #F2F7FB;
+border-radius: 10px;
+border: 1px solid rgba(170,189,212,0.6);</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_6" native="true">
+   <property name="geometry">
+    <rect>
+     <x>1220</x>
+     <y>20</y>
+     <width>217</width>
+     <height>715</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">width: 217px;
+height: 715px;
+background: #F2F7FB;
+border-radius: 10px;
+border: 1px solid rgba(170,189,212,0.6);</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_7" native="true">
+   <property name="geometry">
+    <rect>
+     <x>1460</x>
+     <y>20</y>
+     <width>217</width>
+     <height>715</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">width: 217px;
+height: 715px;
+background: #F2F7FB;
+border-radius: 10px;
+border: 1px solid rgba(170,189,212,0.6);</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

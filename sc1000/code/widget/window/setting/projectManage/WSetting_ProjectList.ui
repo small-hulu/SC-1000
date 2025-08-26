@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ProjectList</class>
+ <widget class="QWidget" name="ProjectList">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1370</width>
+    <height>752</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#ProjectList {
+background: #FFFFFF;
+border-radius: 10px;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="widget_projectList" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>0</y>
+     <width>1351</width>
+     <height>600</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_switch" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>640</y>
+     <width>1370</width>
+     <height>120</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

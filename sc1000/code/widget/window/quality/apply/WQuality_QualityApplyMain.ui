@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QualityApplyMain</class>
+ <widget class="QWidget" name="QualityApplyMain">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>648</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1200</width>
+    <height>648</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1200</width>
+    <height>648</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QTableWidget" name="table_left">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>900</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>10000</width>
+       <height>10000</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTableWidget#table_left
+{
+background: #FFFFFF;
+font-family: PingFang SC;
+font-weight: 500;
+font-size: 24px;
+border-radius: 10px;
+color: #333333;
+line-height: 42px;
+}
+QTableWidget::item {
+    text-align: center;
+}
+QHeaderView {
+    font-family: PingFang SC;
+	font-weight: 500;
+	color: #6D7E92;
+	line-height: 42px;
+	font-size: 26px;
+}
+
+QHeaderView::section {
+    background-color: #EFF0F2;
+	border-top: 1px solid #E1EBF6;
+	border-left: none;
+	border-bottom: 1px solid #E1EBF6;
+	border-right: none;
+	line-height: 42px;
+}
+QTableWidget::item:selected {
+    background: #D4F2F5;
+	border-top: none;
+	border-left: none;
+	border-bottom: 1px solid #22A4B3;
+	border-right: none;
+}</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>11</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="table_right">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>10000</width>
+       <height>10000</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTableWidget#table_right
+{
+background: #FFFFFF;
+font-family: PingFang SC;
+font-weight: 500;
+font-size: 24px;
+border-radius: 10px;
+color: #333333;
+line-height: 42px;
+}
+QTableWidget::item {
+    text-align: center;
+}
+QHeaderView {
+    font-family: PingFang SC;
+	font-weight: 500;
+	color: #6D7E92;
+	line-height: 42px;
+	font-size: 26px;
+}
+
+QHeaderView::section {
+    background-color: #EFF0F2;
+	border-top: 1px solid #E1EBF6;
+	border-left: none;
+	border-bottom: 1px solid #E1EBF6;
+	border-right: none;
+	line-height: 42px;
+}
+QTableWidget::item:selected {
+    background: #D4F2F5;
+	border-top: none;
+	border-left: none;
+	border-bottom: 1px solid #22A4B3;
+	border-right: none;
+}</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

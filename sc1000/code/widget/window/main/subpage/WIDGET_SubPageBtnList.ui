@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SubPageBtnList</class>
+ <widget class="QWidget" name="SubPageBtnList">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>167</width>
+    <height>752</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#SubPageBtnList {
+border-radius: 10px;
+}</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>168</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    font-family: PingFang SC;
+    font-weight: bold;
+    font-size: 32px;
+    color: #FFFFFF;
+    line-height: 42px;
+
+    background: #22A4B3;
+    border-radius: 0px;
+}
+
+QPushButton:checked {
+    font-family: PingFang SC;
+    font-weight: 500;
+    font-size: 32px;
+    color: #333333;
+    line-height: 42px;
+
+    background: #FFFFFF;
+    border-radius: 0px;
+}</string>
+   </property>
+   <property name="text">
+    <string>申请</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>109</y>
+     <width>168</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    font-family: PingFang SC;
+    font-weight: bold;
+    font-size: 32px;
+    color: #FFFFFF;
+    line-height: 42px;
+
+    background: #22A4B3;
+    border-radius: 0px;
+}
+
+QPushButton:checked {
+    font-family: PingFang SC;
+    font-weight: 500;
+    font-size: 32px;
+    color: #333333;
+    line-height: 42px;
+
+    background: #FFFFFF;
+    border-radius: 0px;
+}</string>
+   </property>
+   <property name="text">
+    <string>申请</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>218</y>
+     <width>168</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    font-family: PingFang SC;
+    font-weight: bold;
+    font-size: 32px;
+    color: #FFFFFF;
+    line-height: 42px;
+
+    background: #22A4B3;
+    border-radius: 0px;
+}
+
+QPushButton:checked {
+    font-family: PingFang SC;
+    font-weight: 500;
+    font-size: 32px;
+    color: #333333;
+    line-height: 42px;
+
+    background: #FFFFFF;
+    border-radius: 0px;
+}</string>
+   </property>
+   <property name="text">
+    <string>申请</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>328</y>
+     <width>168</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    font-family: PingFang SC;
+    font-weight: bold;
+    font-size: 32px;
+    color: #FFFFFF;
+    line-height: 42px;
+
+    background: #22A4B3;
+    border-radius: 0px;
+}
+
+QPushButton:checked {
+    font-family: PingFang SC;
+    font-weight: 500;
+    font-size: 32px;
+    color: #333333;
+    line-height: 42px;
+
+    background: #FFFFFF;
+    border-radius: 0px;
+}</string>
+   </property>
+   <property name="text">
+    <string>申请</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_5">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>437</y>
+     <width>168</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    font-family: PingFang SC;
+    font-weight: bold;
+    font-size: 32px;
+    color: #FFFFFF;
+    line-height: 42px;
+
+    background: #22A4B3;
+    border-radius: 0px;
+}
+
+QPushButton:checked {
+    font-family: PingFang SC;
+    font-weight: 500;
+    font-size: 32px;
+    color: #333333;
+    line-height: 42px;
+
+    background: #FFFFFF;
+    border-radius: 0px;
+}</string>
+   </property>
+   <property name="text">
+    <string>申请</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_6">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>546</y>
+     <width>168</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+    font-family: PingFang SC;
+    font-weight: 500;
+    font-size: 32px;
+    color: #333333;
+    line-height: 42px;
+
+    background: #FFFFFF;
+    border-radius: 0px;
+</string>
+   </property>
+   <property name="text">
+    <string>申请</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_7">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>655</y>
+     <width>168</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+    font-family: PingFang SC;
+    font-weight: 500;
+    font-size: 32px;
+    color: #333333;
+    line-height: 42px;
+
+    background: #FFFFFF;
+    border-radius: 0px;
+</string>
+   </property>
+   <property name="text">
+    <string>申请</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

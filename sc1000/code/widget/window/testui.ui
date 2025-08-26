@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TestUi</class>
+ <widget class="QWidget" name="TestUi">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>737</width>
+    <height>861</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="Btn_login">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>290</y>
+     <width>320</width>
+     <height>58</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 1px solid rgba(204, 217, 237, 0.2);
+color: white;
+border-radius: 6px; 
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(85, 149, 255, 255), stop:1 rgba(45, 128, 245, 255));</string>
+   </property>
+   <property name="text">
+    <string>登录</string>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>370</y>
+     <width>141</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 1px solid #3483F7;
+border-radius: 6px;
+color: #3483F7;
+</string>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="table">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>431</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/*
+QTableWidget
+文字无论什么时候都是白色的
+*/
+
+/*设置标题(包括垂直+水平的)*/
+QHeaderView {
+    font-size: 19px;
+    border: 1px solid rgb(255, 255, 255);
+    background: rgb(84, 179, 255);
+    text-align: center;
+}
+
+/*设置标题(水平的)*/
+QHeaderView::section:horizontal {
+    /*白色间隔*/
+    border: 1px solid rgb(255, 255, 255);
+    /*下边框不需要颜色*/
+    border-bottom: 0px;
+	/*改为白色*/
+    color: rgb(255, 255, 255);
+    background: transparent;
+}
+
+/*设置鼠标停留状态*/
+QHeaderView::section:horizontal:hover {
+    /*字体白色*/
+    color: white;
+    /*背景深蓝色*/
+    background: rgb(11, 82, 202);
+}
+
+/*设置鼠标按下状态*/
+QHeaderView::section:horizontal:pressed {
+    /*改*/
+    color: white;
+    /*背景深蓝色减一点*/
+    background: rgb(45, 128, 245);
+
+}
+
+/*设置标题(垂直的)*/
+QHeaderView::section:vertical {
+    /*白色间隔*/
+    border: 1px solid rgb(255, 255, 255);
+    /*下边框不需要颜色*/
+    border-bottom: 0px;
+    /*改*/
+    color: rgb(255, 255, 255);
+    background: rgba(84, 179, 255, 180);
+    padding-top: 3px;
+}
+
+/*设置鼠标停留状态*/
+QHeaderView::section:vertical:hover {
+    /*字体白色*/
+    color: white;
+    /*背景深蓝色*/
+    background: rgb(11, 82, 202);
+
+}
+
+/*设置鼠标按下状态*/
+QHeaderView::section:vertical:pressed {
+    /*改*/
+    color: white;
+    /*背景深蓝色减一点*/
+    background: rgb(45, 128, 245);
+}
+
+QTableWidget,
+QTableView {
+    font-size: 17px;
+    color: rgb(1, 37, 116);
+	/*
+    border: 2px solid rgb(84, 179, 255);
+    */
+	border : none;
+	background: rgb(248, 248, 248);
+    gridline-color: rgb(196, 226, 255);
+    text-align: center;
+    /*禁止焦点*/
+    outline: 0px;
+}
+
+/*设置视图项*/
+QTableWidget::item,
+QTableView::item {
+    padding-left: 5px;
+    padding-right: 5px;
+    border: none;
+    background: rgba(251, 251, 253, 200);
+}
+
+/*设置选中的视图项*/
+QTableWidget::item:selected,
+QTableView::item:selected {
+    background: rgba(207, 230, 253, 200);
+    color: rgb(1, 37, 116);
+}
+
+QTableView::item:alternate: !selected,
+QTableWidget::item:alternate: !selected,
+QListView::item:alternate: !selected {
+    background: rgb(250, 250, 250);
+}
+
+QTableView::item: !alternate: !selected,
+QTableWidget::item: !alternate: !selected {
+    background: rgb(240, 247, 254);
+}</string>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAsNeeded</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAsNeeded</enum>
+   </property>
+   <row>
+    <property name="text">
+     <string>A</string>
+    </property>
+    <property name="textAlignment">
+     <set>AlignCenter</set>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>B</string>
+    </property>
+    <property name="textAlignment">
+     <set>AlignCenter</set>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>C</string>
+    </property>
+    <property name="textAlignment">
+     <set>AlignCenter</set>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>D</string>
+    </property>
+    <property name="textAlignment">
+     <set>AlignCenter</set>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>E</string>
+    </property>
+    <property name="textAlignment">
+     <set>AlignCenter</set>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>F</string>
+    </property>
+    <property name="textAlignment">
+     <set>AlignCenter</set>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>G</string>
+    </property>
+    <property name="textAlignment">
+     <set>AlignCenter</set>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>H</string>
+    </property>
+    <property name="textAlignment">
+     <set>AlignCenter</set>
+    </property>
+   </row>
+   <column>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>2</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>3</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>4</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>5</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>6</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>7</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>8</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>9</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>10</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>11</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>12</string>
+    </property>
+   </column>
+   <item row="0" column="0">
+    <property name="text">
+     <string>123</string>
+    </property>
+   </item>
+   <item row="0" column="1">
+    <property name="text">
+     <string>aaa</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>60</y>
+     <width>180</width>
+     <height>62</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: #437AFF;
+border-radius: 31px;
+
+font-family: PingFang SC;
+font-weight: bold;
+font-size: 28px;
+color: #FEFEFE;
+line-height: 42px;</string>
+   </property>
+   <property name="text">
+    <string>释放所有</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>480</y>
+     <width>180</width>
+     <height>62</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: #FF4F4F;
+border-radius: 31px;
+
+font-family: PingFang SC;
+font-weight: bold;
+font-size: 28px;
+color: #FEFEFE;
+line-height: 42px;</string>
+   </property>
+   <property name="text">
+    <string>释放所有</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_5">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>270</y>
+     <width>180</width>
+     <height>62</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: #FF6637;
+border-radius: 31px;
+
+font-family: PingFang SC;
+font-weight: bold;
+font-size: 28px;
+color: #FEFEFE;
+line-height: 42px;</string>
+   </property>
+   <property name="text">
+    <string>释放所有</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_6">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>410</y>
+     <width>180</width>
+     <height>62</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: #22A4B3;
+border-radius: 31px;
+
+font-family: PingFang SC;
+font-weight: bold;
+font-size: 28px;
+color: #FEFEFE;
+line-height: 42px;</string>
+   </property>
+   <property name="text">
+    <string>释放所有</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_7">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>340</y>
+     <width>180</width>
+     <height>62</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: #9B60FB;
+border-radius: 31px;
+
+font-family: PingFang SC;
+font-weight: bold;
+font-size: 28px;
+color: #FEFEFE;
+line-height: 42px;</string>
+   </property>
+   <property name="text">
+    <string>释放所有</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_8">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>130</y>
+     <width>180</width>
+     <height>62</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: #19BC90;
+border-radius: 31px;
+
+font-family: PingFang SC;
+font-weight: bold;
+font-size: 28px;
+color: #FEFEFE;
+line-height: 42px;</string>
+   </property>
+   <property name="text">
+    <string>释放所有</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_9">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>550</y>
+     <width>180</width>
+     <height>62</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: #49d0d5;
+border-radius: 31px;
+
+font-family: PingFang SC;
+font-weight: bold;
+font-size: 28px;
+color: #FEFEFE;
+line-height: 42px;</string>
+   </property>
+   <property name="text">
+    <string>释放所有</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_10">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>200</y>
+     <width>180</width>
+     <height>62</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: #1F9EEF;
+border-radius: 31px;
+
+font-family: PingFang SC;
+font-weight: bold;
+font-size: 28px;
+color: #FEFEFE;
+line-height: 42px;</string>
+   </property>
+   <property name="text">
+    <string>释放所有</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_ischecked">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>210</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1111</width>
+     <height>1111</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background: transparent;
+    border-image: url(:/suzhou/btn_off.png);
+}
+
+QPushButton:checked {
+    background: transparent;
+    border-image: url(:/suzhou/btn_on.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_5" native="true">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>200</y>
+     <width>221</width>
+     <height>55</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">width: 221px;
+height: 55px;
+background: #FF4F4F;
+border-radius: 27px;</string>
+   </property>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>83</x>
+      <y>15</y>
+      <width>120</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">width: 102px;
+height: 25px;
+font-family: PingFang SC;
+font-weight: bold;
+font-size: 26px;
+color: #FFFFFF;
+line-height: 42px;</string>
+    </property>
+    <property name="text">
+     <string>解除警告</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>32</x>
+      <y>12</y>
+      <width>31</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/suzhou/bottom_warning.png);</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

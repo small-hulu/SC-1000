@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MaintainPower</class>
+ <widget class="QWidget" name="MaintainPower">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1696</width>
+    <height>752</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="styleSheet">
+      <string notr="true">QTableWidget {
+    alternate-background-color: #f2f7fb;
+
+    background: #FFFFFF;
+    border-radius: 10px 10px 0px 0px;
+    border: 1px solid rgba(170, 189, 212, 0.6);
+
+    font-family: PingFang SC;
+    font-weight: 500;
+    font-size: 22px;
+    color: #333333;
+    line-height: 35px;
+}
+
+QHeaderView {
+    font-family: PingFang SC;
+    font-weight: 500;
+    font-size: 30px;
+    color: #333333;
+    line-height: 70px;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+QHeaderView::section {
+    border: none;
+}</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

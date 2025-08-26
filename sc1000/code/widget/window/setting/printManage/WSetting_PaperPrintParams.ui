@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PaperPrintParams</class>
+ <widget class="QWidget" name="PaperPrintParams">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1696</width>
+    <height>752</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1696</width>
+    <height>752</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1696</width>
+    <height>752</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="lab_hospitalName">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>40</y>
+     <width>100</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">width: 93px;
+height: 23px;
+font-family: PingFang SC;
+font-weight: 500;
+font-size: 24px;
+color: #666666;
+line-height: 35px;</string>
+   </property>
+   <property name="text">
+    <string>打印机名称</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lab_hospitalName_4">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>210</y>
+     <width>121</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">width: 93px;
+height: 23px;
+font-family: PingFang SC;
+font-weight: 500;
+font-size: 24px;
+color: #666666;
+line-height: 35px;</string>
+   </property>
+   <property name="text">
+    <string>打印预览：</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="combo_print_preview">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>190</y>
+     <width>180</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>180</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+    border: 1px solid #DCDEE0;
+    border-radius: 6px;
+    font-family: &quot;PingFang SC Medium&quot;;
+    font-size: 24px;
+    padding-left: 10px;
+    background-color: rgb(250, 251, 252);
+    color: #333333;
+	font-weight: 500;
+}
+
+QComboBox::drop-down {
+    margin: 0px;
+    padding-right: 20px;
+    border: 0px;
+}
+
+QComboBox::down-arrow {
+    image: url(:/static/PHOTOS/combo_up.png);
+}
+
+QComboBox::down-arrow:on {
+    image: url(:/static/PHOTOS/combo_down.png);
+}
+
+QListView {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    border-radius: 10px;
+    outline: 0px;
+    font-size: 24px;
+    color: #333333;
+    background-color: rgb(250, 251, 252);
+}
+
+QListView::item {
+    margin: 0px;
+    padding: 10px;
+    border: 0px;
+    border-radius: 0px;
+    height: 60px;
+}
+
+QListView::item:hover {
+    color: #333333;
+}
+
+QListView::item:selected {
+    color: rgb(31, 112, 227);
+}</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="combo_PrinterName">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>20</y>
+     <width>600</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>180</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+    border: 1px solid #DCDEE0;
+    border-radius: 6px;
+    font-family: &quot;PingFang SC Medium&quot;;
+    font-size: 24px;
+    padding-left: 10px;
+    background-color: rgb(250, 251, 252);
+	font-weight: 500;
+    color: #000000;
+}
+
+QComboBox::drop-down {
+    margin: 0px;
+    padding-right: 20px;
+    border: 0px;
+}
+
+QComboBox::down-arrow {
+    image: url(:/static/PHOTOS/combo_up.png);
+}
+
+QComboBox::down-arrow:on {
+    image: url(:/static/PHOTOS/combo_down.png);
+}
+
+QListView {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    border-radius: 10px;
+    outline: 0px;
+    font-size: 24px;
+    color: #333333;
+    background-color: rgb(250, 251, 252);
+}
+
+QListView::item {
+    margin: 0px;
+    padding: 10px;
+    border: 0px;
+    border-radius: 0px;
+    height: 60px;
+}
+
+QListView::item:hover {
+    color: #333333;
+}
+
+QListView::item:selected {
+    color: rgb(31, 112, 227);
+}</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>新建项目</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>新建项目</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>新建项目</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>新建项目</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>20</y>
+     <width>850</width>
+     <height>660</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>850</width>
+     <height>660</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>850</width>
+     <height>660</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget#widget{
+background: #FFFFFF;
+border-radius: 10px;
+}</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="combo_Prin_mode">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>110</y>
+     <width>600</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>180</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+    border: 1px solid #DCDEE0;
+    border-radius: 6px;
+    font-family: &quot;PingFang SC Medium&quot;;
+    font-size: 24px;
+    padding-left: 10px;
+    background-color: rgb(250, 251, 252);
+    color: #333333;
+	font-weight: 500;
+}
+
+QComboBox::drop-down {
+    margin: 0px;
+    padding-right: 20px;
+    border: 0px;
+}
+
+QComboBox::down-arrow {
+    image: url(:/static/PHOTOS/combo_up.png);
+}
+
+QComboBox::down-arrow:on {
+    image: url(:/static/PHOTOS/combo_down.png);
+}
+
+QListView {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    border-radius: 10px;
+    outline: 0px;
+    font-size: 24px;
+    color: #333333;
+    background-color: rgb(250, 251, 252);
+}
+
+QListView::item {
+    margin: 0px;
+    padding: 10px;
+    border: 0px;
+    border-radius: 0px;
+    height: 60px;
+}
+
+QListView::item:hover {
+    color: #333333;
+}
+
+QListView::item:selected {
+    color: rgb(31, 112, 227);
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lab_hospitalName_5">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>130</y>
+     <width>100</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">width: 93px;
+height: 23px;
+font-family: PingFang SC;
+font-weight: 500;
+font-size: 24px;
+color: #666666;
+line-height: 35px;</string>
+   </property>
+   <property name="text">
+    <string>打印模版</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lab_hospitalName_6">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>280</y>
+     <width>91</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">width: 93px;
+height: 23px;
+font-family: PingFang SC;
+font-weight: 500;
+font-size: 24px;
+color: #666666;
+line-height: 35px;</string>
+   </property>
+   <property name="text">
+    <string>分辨率</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lab_resolution">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>267</y>
+     <width>101</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">width: 93px;
+height: 23px;
+font-family: PingFang SC;
+font-weight: 500;
+font-size: 24px;
+color: #666666;
+line-height: 35px;
+background: #FFFFFF;</string>
+   </property>
+   <property name="text">
+    <string>1.0</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_resolution_add">
+   <property name="geometry">
+    <rect>
+     <x>375</x>
+     <y>267</y>
+     <width>101</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">width: 120px;
+height: 50px;
+background: #19BC90;
+border-radius: 25px;
+
+font-family: PingFang SC;
+font-weight: bold;
+font-size: 28px;
+color: #FFFFFF;
+line-height: 35px;</string>
+   </property>
+   <property name="text">
+    <string>增大</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_resolution_decrease">
+   <property name="geometry">
+    <rect>
+     <x>134</x>
+     <y>266</y>
+     <width>111</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">width: 120px;
+height: 50px;
+background: #19BC90;
+border-radius: 25px;
+
+font-family: PingFang SC;
+font-weight: bold;
+font-size: 28px;
+color: #FFFFFF;
+line-height: 35px;</string>
+   </property>
+   <property name="text">
+    <string>减小</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SampleApply</class>
+ <widget class="QWidget" name="SampleApply">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1696</width>
+    <height>760</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1696</width>
+    <height>760</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1696</width>
+    <height>760</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="widget_left" native="true">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>-8</y>
+     <width>451</width>
+     <height>761</height>
+    </rect>
+   </property>
+   <widget class="QWidget" name="widget_left_up" native="true">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>6</y>
+      <width>441</width>
+      <height>128</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>441</width>
+      <height>128</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>441</width>
+      <height>128</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget#widget_left_up
+{
+background: #FFFFFF;
+border-radius: 10px;
+}</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget_left_down" native="true">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>142</y>
+      <width>441</width>
+      <height>620</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>441</width>
+      <height>620</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>441</width>
+      <height>620</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget#widget_left_down
+{
+background: #FFFFFF;
+border-radius: 10px;
+}</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget_right" native="true">
+   <property name="geometry">
+    <rect>
+     <x>466</x>
+     <y>2</y>
+     <width>1231</width>
+     <height>761</height>
+    </rect>
+   </property>
+   <widget class="QWidget" name="widget_right_up" native="true">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>-4</y>
+      <width>1221</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QWidget" name="widget_up_left" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>529</width>
+       <height>126</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>529</width>
+       <height>126</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>529</width>
+       <height>126</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget#widget_up_left
+{
+background: #FFFFFF;
+border-radius: 10px;
+}</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="widget_up_right" native="true">
+     <property name="geometry">
+      <rect>
+       <x>537</x>
+       <y>0</y>
+       <width>678</width>
+       <height>126</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>678</width>
+       <height>126</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>678</width>
+       <height>126</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: #FFFFFF;
+border-radius: 10px;</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <widget class="QLabel" name="lab_num_view">
+          <property name="styleSheet">
+           <string notr="true">width: 227px;
+height: 21px;
+font-family: PingFang SC;
+font-weight: 500;
+font-size: 22px;
+color: #959595;
+line-height: 42px;</string>
+          </property>
+          <property name="text">
+           <string>患者编号：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lab_num_edit">
+          <property name="styleSheet">
+           <string notr="true">width: 227px;
+height: 21px;
+font-family: PingFang SC;
+font-weight: 500;
+font-size: 22px;
+color: #959595;
+line-height: 42px;</string>
+          </property>
+          <property name="text">
+           <string>用户自定义</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <item>
+         <widget class="QLabel" name="lab_project_view">
+          <property name="styleSheet">
+           <string notr="true">width: 139px;
+height: 21px;
+font-family: PingFang SC;
+font-weight: 500;
+font-size: 22px;
+color: #959595;
+line-height: 42px;</string>
+          </property>
+          <property name="text">
+           <string>检测项目：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lab_project_edit">
+          <property name="styleSheet">
+           <string notr="true">width: 139px;
+height: 21px;
+font-family: PingFang SC;
+font-weight: 500;
+font-size: 22px;
+color: #959595;
+line-height: 42px;</string>
+          </property>
+          <property name="text">
+           <string>项目1;项目2;项目3</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_right_down" native="true">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>132</y>
+      <width>1216</width>
+      <height>620</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1216</width>
+      <height>620</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1216</width>
+      <height>603</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget#widget_right_down{
+background: #FFFFFF;
+border-radius: 10px;
+}</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

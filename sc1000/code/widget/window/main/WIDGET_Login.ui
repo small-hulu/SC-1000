@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Login</class>
+ <widget class="QWidget" name="Login">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1033</width>
+    <height>604</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#Login {
+border-image: url(:/static/images/login_background.png);
+}
+
+</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="1">
+    <spacer name="verticalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>104</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="0">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>259</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="1">
+    <widget class="QWidget" name="widget" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>480</width>
+       <height>360</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: none;
+background: white;
+border-radius: 10px;</string>
+     </property>
+     <widget class="QPushButton" name="btn_login">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>240</y>
+        <width>320</width>
+        <height>58</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: none;
+border: 1px solid rgba(204, 217, 237, 0.2);
+font-size: 24px;
+font-family: &quot;PingFang SC&quot;;
+color: white;
+border-radius: 6px; 
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(85, 149, 255, 255), stop:1 rgba(45, 128, 245, 255));</string>
+      </property>
+      <property name="text">
+       <string>登录</string>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="combox_id">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>50</y>
+        <width>261</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QComboBox{
+	border-radius: 0px;
+	border: none;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	font-family: &quot;PingFang SC Medium&quot;;
+	font-size: 18px;
+	padding-left: 10px;
+	padding-right: 30px;
+	background-color: rgb(240, 242, 245);
+	color: #333333;
+}
+
+QComboBox::drop-down{
+	margin: 0px;
+	padding-right: 0px;
+	border: 0px;
+	min-width: 40px;
+}
+QComboBox::down-arrow{
+	image: url(:static/PHOTOS/login_combo_down_arrow.png);
+}
+QListView{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	border-radius: 10px;
+	outline: 0px;
+	font-size: 20px;
+	color: #333333;
+	background-color: rgb(250, 251, 252);
+}
+QListView::item{
+	margin: 0px;
+	padding: 10px;
+	border: 0px;
+	border-radius: 0px;
+	height: 30px;
+}
+QListView::item:hover{
+	color: #333333;
+}
+QListView::item:selected{
+	color: rgb(31, 112, 227);
+}
+
+/*
+QComboBox{
+	border: 1px solid #DCDEE0;
+	border-radius: 6px;
+	font-family: &quot;PingFang SC Medium&quot;;
+	font-size: 18px;
+	padding-left: 10px;
+	background-color: rgb(250, 251, 252);
+	color: #333333;
+}
+QComboBox::drop-down{
+	margin: 0px;
+	padding-right: 0px;
+	border: 0px;
+	min-width: 40px;
+}
+QComboBox::down-arrow{
+	background-color: red;
+	image: url(:/PHOTOS/combo_down.png);
+}
+QComboBox::down-arrow:on{
+	image: url(:/PHOTOS/combo_up.png);
+}
+QListView{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	border-radius: 10px;
+	outline: 0px;
+	font-size: 20px;
+	color: #333333;
+	background-color: rgb(250, 251, 252);
+}
+QListView::item{
+	margin: 0px;
+	padding: 10px;
+	border: 0px;
+	border-radius: 0px;
+	height: 30px;
+}
+QListView::item:hover{
+	color: #333333;
+}
+QListView::item:selected{
+	color: rgb(31, 112, 227);
+}
+*/</string>
+      </property>
+      <property name="editable">
+       <bool>true</bool>
+      </property>
+      <property name="maxVisibleItems">
+       <number>13</number>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+      </property>
+      <property name="minimumContentsLength">
+       <number>1</number>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="frame">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QWidget" name="widget_2" native="true">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>50</y>
+        <width>51</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(:static/PHOTOS/login_username.png);
+	background-color: rgb(240, 242, 245);
+border: none;
+border-radius: 0px;
+border-top-left-radius: 6px;
+border-bottom-left-radius: 6px;</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="widget_3" native="true">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>140</y>
+        <width>51</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(:static/PHOTOS/login_password.png);
+	background-color: rgb(240, 242, 245);
+border: none;
+border-radius: 0px;
+border-top-left-radius: 6px;
+border-bottom-left-radius: 6px;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="LineEdit_pd">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>140</y>
+        <width>261</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit{
+border-radius: 0px;
+	border: none;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	font-family: &quot;PingFang SC Medium&quot;;
+	font-size: 18px;
+	padding-left: 10px;
+	background-color: rgb(240, 242, 245);
+	color: #333333;
+}
+
+QLineEdit:focus{
+	border-color: rgb(53,125,247);
+}</string>
+      </property>
+      <property name="text">
+       <string>admin</string>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+      <property name="placeholderText">
+       <string>请输入密码</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_username">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>50</y>
+        <width>221</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit{
+border-radius: 0px;
+	border: none;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	font-family: &quot;PingFang SC Medium&quot;;
+	font-size: 18px;
+	padding-left: 10px;
+	background-color: rgb(240, 242, 245);
+	color: #333333;
+}
+
+QLineEdit:focus{
+	border-color: rgb(53,125,247);
+}</string>
+      </property>
+      <property name="text">
+       <string>admin</string>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Normal</enum>
+      </property>
+      <property name="placeholderText">
+       <string>请输入用户名</string>
+      </property>
+     </widget>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <spacer name="horizontalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>258</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="2" column="1">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>104</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
