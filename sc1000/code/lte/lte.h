@@ -30,6 +30,9 @@ using namespace ::std;
  *  此类是对LTE_ML302模块通用功能进行封装。
  *  有获取经纬度，信号强度，与TCP连接，心跳，重连，传输等功能。
  *  LTE_ML302类中维护了一个内部类Result，目的是返回此模块与TCP交互时返回的数据进行一个封装。
+ *
+ *
+ *  git——test
  */
 class LTE_ML302 : public ICOMThread {
     Q_OBJECT
