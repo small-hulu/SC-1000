@@ -34,18 +34,7 @@ void LTE_ML302::init() {
     reconnect_timer = new QTimer();
     heartbeat_timer = new QTimer();
 
-    if (serial) {
-        if (serial->isOpen()) serial->close();
-        serial->deleteLater();
-    }
 
-    serial = new QSerialPort();
-    serial->setParity(QSerialPort::NoParity);
-    serial->setDataBits(QSerialPort::Data8);
-    serial->setStopBits(QSerialPort::OneStop);
-    serial->setFlowControl(QSerialPort::NoFlowControl);
-
-    connect(serial, &QSerialPort::readyRead, this, &LTE_ML302::handle_ready_read, Qt::DirectConnection);
 }
 
 
@@ -460,6 +449,7 @@ void LTE_ML302::tcp_reconnect() {
     reconnect_timer->start();
 }
 
+
 /**
  *  重连槽函数
  */
@@ -482,7 +472,6 @@ void LTE_ML302::reconnect() {
 /**
  *  处理TCP主动发送的数据
  */
-
 void LTE_ML302::handle_ready_read() {
     if (command.isEmpty()) {
         delay(50);
@@ -712,7 +701,18 @@ void LTE_ML302::delay(int num) {
 /* ---------------- 串口线程主循环 ---------------- */
 void LTE_ML302::run() {
     QEventLoop eventLoop;
+    if (serial) {
+        if (serial->isOpen()) serial->close();
+        serial->deleteLater();
+    }
 
+    serial = new QSerialPort();
+    serial->setParity(QSerialPort::NoParity);
+    serial->setDataBits(QSerialPort::Data8);
+    serial->setStopBits(QSerialPort::OneStop);
+    serial->setFlowControl(QSerialPort::NoFlowControl);
+
+    connect(serial, &QSerialPort::readyRead, this, &LTE_ML302::handle_ready_read, Qt::DirectConnection);
     while (th_isRunning) {
         task_type task{};
         {
