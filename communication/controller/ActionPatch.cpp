@@ -172,6 +172,7 @@ TaskNode ActionPatch::patch_for_PipettingNeedle(const QJsonObject &json) {
 
         /// 0 默认的液面检测
         /// 1 试剂的随量跟踪
+        /// 2 固定下探位置
         if (auto sub = op[KJ::suctionMode]; sub.toInt() == 0) {
             /// pass
             /// 保持原样，默认就是液面检测

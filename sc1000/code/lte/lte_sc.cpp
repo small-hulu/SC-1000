@@ -105,7 +105,7 @@ bool LTE_SC::Init(const QString &vid, const QString &pid) {
         //qInfo() << msgList;
         //qInfo() << msgList.join(",");
 
-        if(lte_controler->open_tcp_connect("8.131.87.42", "19965"))
+        if(lte_controler->open_tcp_connect("8.131.87.42", "19965"))  //19965
         {
             lte_controler->send_connect();
             lte_controler->send_heartbeat();

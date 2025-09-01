@@ -713,6 +713,7 @@ void LTE_ML302::run() {
     serial->setFlowControl(QSerialPort::NoFlowControl);
 
     connect(serial, &QSerialPort::readyRead, this, &LTE_ML302::handle_ready_read, Qt::DirectConnection);
+
     while (th_isRunning) {
         task_type task{};
         {
@@ -744,7 +745,6 @@ void LTE_ML302::run() {
         }
     }
 
-    // 清理
     if (reconnect_timer) {
         reconnect_timer->stop();
         reconnect_timer->deleteLater();
@@ -758,7 +758,7 @@ void LTE_ML302::run() {
 
     if (serial) {
         if (serial->isOpen()) serial->close();
-        QMetaObject::invokeMethod(serial, "deleteLater", Qt::QueuedConnection);
+        serial->deleteLater();
         serial = nullptr;
     }
 
