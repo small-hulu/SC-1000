@@ -167,6 +167,7 @@ double EExpSample::Get_Concentration() {
         //目前还是在用最新的校准实验，后面把激活功能添加后，在从库中取激活的曲线去出值
         auto expCal = CONTROLLER::ExpCalibration::instance().Select_byId_fromDB(
             rea->table[EReagent::attr::idExpCal]);
+
         if (expCal) {
             auto cal = expCal->Get_relatedCalibration();
             if (cal) {

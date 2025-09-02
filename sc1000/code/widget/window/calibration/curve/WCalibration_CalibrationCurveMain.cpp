@@ -61,7 +61,7 @@ CalibrationCurveMain::UiInfo CalibrationCurveMain::Get_uiInfo() {
     auto reaList       = CONTROLLER::Reagent::instance().Select_isLoadList();
     for (auto reagent : reaList) {
         if (reagent->table[attr_reagent::project] == info.projectName &&
-            reagent->table[attr_reagent::batchNum] == info.reagentBatch) {
+                reagent->table[attr_reagent::batchNum] == info.reagentBatch) {
             info.plc4 = reagent->Get_4plc();
             //std::string  转 qstring
             qDebug()<<QString::fromStdString(info.plc4.to_string())<<endl;
@@ -96,12 +96,20 @@ QVector<double> CalibrationCurveMain::get_calibrationCurve() {
 
     FourPLCWithCal cal4plc;
     cal4plc.fourplc = info.plc4;
+    QString projectName = info.projectName;
     using attr_expcal  = CONTROLLER::ExpCalibration::entity_attr;
     auto expCalList    = CONTROLLER::ExpCalibration::instance().Select_all_fromDB();
     CONTROLLER::ExpCalibration::entity_item latestMatch = nullptr;
     QDateTime latestTime;
 
     for (auto expCal : expCalList) {
+        // 先判断项目名是否一致
+        QString expProject = expCal->table[attr_expcal::project];
+        if (expProject != projectName) {
+            continue; // 跳过不是当前项目的
+        }
+
+        // 再判断时间
         QString timeEndStr = expCal->table[attr_expcal::timeEnd];
         QDateTime timeEnd = QDateTime::fromString(timeEndStr, "yyyy-MM-dd HH:mm:ss");
         if (!timeEnd.isValid()) continue;
@@ -111,10 +119,13 @@ QVector<double> CalibrationCurveMain::get_calibrationCurve() {
             latestTime = timeEnd;
         }
     }
+
     if (latestMatch) {
         qDebug() << "最新实验 idReagent =" << latestMatch->table[attr_expcal::idReagent]
+                 << " project =" << latestMatch->table[attr_expcal::project]
                  << " timeEnd =" << latestTime.toString("yyyy-MM-dd HH:mm:ss");
     }
+
     if (latestMatch) {
         QString idReagent = latestMatch->table[attr_expcal::idReagent];
         auto reagent = CONTROLLER::Reagent::instance().Select_byId_fromDB(idReagent);
@@ -134,8 +145,8 @@ QVector<double> CalibrationCurveMain::get_calibrationCurve() {
 
         std::sort(pointList.begin(), pointList.end(),
                   [](const FourPLCWithCal::Point& a, const FourPLCWithCal::Point& b) {
-                      return a.rlu < b.rlu;
-                  });
+            return a.rlu < b.rlu;
+        });
 
         qDebug() << "四参数" << QString::fromStdString(cal4plc.fourplc.to_string()) << endl;
 

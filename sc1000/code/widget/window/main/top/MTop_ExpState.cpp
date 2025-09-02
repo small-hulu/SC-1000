@@ -67,7 +67,7 @@ void ExpStateController::Set_State(ExpStateController::ExpState newState) {
     qInfo() << msg;
     state = newState;
 }
-//xsw
+
 void ExpStateController::Exp_start() {
     if (COM::ModbusImpl::instance().isOpen() == false) {
         DIALOG::Create_DWarningDialog("设备通信连接异常");
