@@ -23,7 +23,7 @@ MCUVersion::MCUVersion(QWidget* parent) : QWidget(parent), ui(new Ui::MCUVersion
     content << (QList<QString>()
                 << QString("设备编号")
                 << (CONTROLLER::IniSC1000::instance()[CONTROLLER::KI::machine_number].toString()));
-    content << (QList<QString>() << QString("软件版本") << ("V1.0.0.5 2025-08-26"));
+    content << (QList<QString>() << QString("软件版本") << ("V1.0.0.7 2025-09-05"));
     content << (QList<QString>() << QString("控制组件") << ("V" + qApp->applicationVersion()));
     content << get_version(COM::DGripper::instance());
     content << get_version(COM::DMixing::instance());

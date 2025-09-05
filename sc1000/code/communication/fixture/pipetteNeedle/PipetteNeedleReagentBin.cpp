@@ -1,5 +1,5 @@
 #include "PipetteNeedleReagentBin.h"
-
+#include "communication/controller/WatchDog.h"
 #include "communication/device/reagentBin/DReagentBin.h"
 
 namespace COM::WFIXTURE {
@@ -14,6 +14,12 @@ template class PipetteNeedleReagentBin<6>;
 
 template <size_t BinIdx>
 PipetteNeedleReagentBin<BinIdx>::PipetteNeedleReagentBin() : PipetteNeedle() {
+    ///关闭试剂仓自动混匀状态
+    {
+        WatchDog_Guard guard;
+        WatchDog::instance().Remove_watchTask(KI::enable_reagentBinSpinLoop);
+    }
+
     /// 该部分需要将移液针和试剂仓同时操作
     OperationPanel::Sudoku matrx = {
         {1, 1, 1},  //
@@ -39,6 +45,19 @@ PipetteNeedleReagentBin<BinIdx>::PipetteNeedleReagentBin() : PipetteNeedle() {
         reagentBin.Set_Config(DReagentBin::Mode_Position, reagent_params);
         reagentBin.Exec_sequencedTask();
     }
+}
+
+template <size_t BinIdx>
+PipetteNeedleReagentBin<BinIdx>::~PipetteNeedleReagentBin() {
+    ///恢复试剂仓自动混匀状态
+
+    WatchDog_Guard guard;
+    auto&&         ini = IniConfig::instance();
+    bool open = IniConfig::instance()[KI::enable_reagentBinSpinLoop].toBool();
+    ini.setValue(KI::enable_reagentBinSpinLoop, (int)open);
+
+    auto&& dog = WatchDog::instance();
+    dog.Reset();
 }
 
 template <size_t BinIdx>

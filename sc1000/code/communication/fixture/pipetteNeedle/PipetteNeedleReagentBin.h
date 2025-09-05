@@ -13,7 +13,7 @@ private:
 
 public:
     PipetteNeedleReagentBin();
-
+    ~PipetteNeedleReagentBin();
 public:
     bool Save_fixtureParams() override;
     bool Save_fixtureParams_Without_Z() override;

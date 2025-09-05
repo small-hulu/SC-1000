@@ -10,8 +10,8 @@
 
 namespace COM {
 class WatchDog
-    : public ICOMThread
-    , public ISingleton<WatchDog> {
+        : public ICOMThread
+        , public ISingleton<WatchDog> {
     Q_OBJECT
     friend class ISingleton<WatchDog>;
 
@@ -23,7 +23,7 @@ public:
 
 private:
     QList<SelfTask> m_watchedTaskList;
-
+    QMap<QString, SelfTask> key_watchedTaskList;
 protected:
     WatchDog(QObject* parent = nullptr);
 
@@ -33,6 +33,9 @@ public:
 public:
     void Append_watchTask(const SelfTask& task);
 
+    void Append_watchTask(const QString& key, const SelfTask& task);
+
+    void Remove_watchTask(const QString& key);
 private:
     /// 检测错误
     void check_mcuError();

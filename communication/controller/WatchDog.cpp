@@ -41,12 +41,22 @@ void WatchDog::Reset() {
     }
     //试剂仓自动混匀
     if (ini[KI::enable_reagentBinSpinLoop].toInt()) {
-        Append_watchTask(std::bind(&WatchDog::exec_reagentBinSpinLoop, this));
+        Append_watchTask(KI::enable_reagentBinSpinLoop,std::bind(&WatchDog::exec_reagentBinSpinLoop, this));
     }
 }
 
 void WatchDog::Append_watchTask(const WatchDog::SelfTask& task) {
     m_watchedTaskList.push_back(task);
+}
+
+void WatchDog::Append_watchTask(const QString& key, const SelfTask& task) {
+    std::lock_guard<std::mutex> lock(th_taskMutex);
+    key_watchedTaskList[key] = task;
+}
+
+void WatchDog::Remove_watchTask(const QString& key) {
+    std::lock_guard<std::mutex> lock(th_taskMutex);
+    key_watchedTaskList.remove(key);
 }
 
 void WatchDog::check_mcuError() {
@@ -210,7 +220,6 @@ void WatchDog::exec_reagentBinSpinLoop() {
     /// 三分钟转一次
     if (stepCount >= 3 * 60 * 1000) {
         stepCount = 0;
-
         auto& owner = DeviceManager::enum_to_owner(DeviceManager::atomic_flag::ReagentBin);
         auto  lock  = MultLock::Create_entity({&owner});
         if (DIncubate::instance().Get_CU().is_load == false) {
@@ -232,6 +241,10 @@ void WatchDog::run() {
         for (auto&& task : m_watchedTaskList) {
             task();
         }
+        for (auto &&task : key_watchedTaskList) {
+            if (task) task();
+        }
+
     }
 }
 }  // namespace COM
